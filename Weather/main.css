@@ -28,23 +28,22 @@ body{
 	color: white;
 	/* font-size: 2em; */
 	display: flex;
-	justify-content: center;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 }
 
 .input {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 /* 	outline: 2px solid black; */
-	padding: 1em;
+	padding: 2em;
 }
 
 input[type='text'] {
 	width: 90%;
-	min-width: 400px;
 	background-color: transparent;
 	margin-right: 0.75em;
 	font-size: 2em;
@@ -65,6 +64,7 @@ input[type='text'] {
 ::placeholder {
 	color: rgba(0, 0, 0, 0.2);
 	font-style: italic;
+	text-align: center;
 }
 input[type='text']:focus{
 	outline: none;
@@ -74,6 +74,7 @@ input[type='submit'] {
 	color: #fff;
 	background: #dddddd;
 	padding:0.75em 2em;
+	margin-top: 0.75em;
 	font-size: 1.175em;
 	color: black;
 	font-weight: bold;
@@ -85,6 +86,7 @@ input[type='submit'] {
 	height: 30vh;
 	width: 50%;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
 }
