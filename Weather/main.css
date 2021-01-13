@@ -1,0 +1,110 @@
+@import url();
+* {
+	margin:  0;
+	padding: 0;
+	box-sizing: border-box;
+	/* outline: 2px solid red; */
+}
+
+html {
+    height: 100%;
+}
+
+img {
+	filter: brightness(0) invert(1);
+
+}
+
+body{
+	height: 100vh;
+	margin: 0;	/* 
+	background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143)); */
+	background: #4e54c8;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: sans-serif;
+	color: white;
+	/* font-size: 2em; */
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.input {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+/* 	outline: 2px solid black; */
+	padding: 1em;
+}
+
+input[type='text'] {
+	width: 90%;
+	min-width: 400px;
+	background-color: transparent;
+	margin-right: 0.75em;
+	font-size: 2em;
+	border: none;
+	border-bottom: 1px solid white;
+	color: #000;
+
+/* 	padding: 10px 0;
+	font-size: 18px;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid white;
+	color: white;
+	outline: none;
+	background: transparent;
+ */
+}
+::placeholder {
+	color: rgba(0, 0, 0, 0.2);
+	font-style: italic;
+}
+input[type='text']:focus{
+	outline: none;
+}
+
+input[type='submit'] {
+	color: #fff;
+	background: #dddddd;
+	padding:0.75em 2em;
+	font-size: 1.175em;
+	color: black;
+	font-weight: bold;
+	border: none;
+	border-radius: 30px; 
+}
+.location, .temperature-desc {
+	/* outline: 2px solid red; */
+	height: 30vh;
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.temperature-desc {
+	flex-direction: column;
+	font-size: 20px;
+}
+
+.degree-section{
+/* 	outline: 2px solid black; */
+	display: flex;
+	align-items: center;
+}
+.degree-section span {
+	font-size: 1.125em;
+	margin-left: 10px;
+}
+
+.desc {
+	text-transform: capitalize;
+	font-style: italic;
+}
