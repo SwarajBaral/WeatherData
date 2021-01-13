@@ -6,9 +6,19 @@ let weatherDesc = document.querySelector(".desc");
 let inputValue = document.querySelector(".input-value")
 
 button.addEventListener('click', function() {
-const proxy = `https://cors-anywhere.herokuapp.com/`;
-	const api = `${proxy}http://api.openweathermap.org/data/2.5/weather?q=`+ inputValue.value +`&units=Metric&appid=7024602db09f273225688969f7be1f84`;
-	fetch (api)
+
+/*	var api = '';
+
+	if (location.protocol === 'http:') {
+		api += `http://api.openweathermap.org/data/2.5/weather?q=`+ inputValue.value +`&units=Metric&appid=7024602db09f273225688969f7be1f84`;
+	}
+
+	else {
+		api += `https://api.openweathermap.org/data/2.5/weather?q=`+ inputValue.value +`&units=Metric&appid=7024602db09f273225688969f7be1f84`;
+	}*/
+	const proxy = `https://cors-anywhere.herokuapp.com/`;
+	fetch (`${proxy}http://api.openweathermap.org/data/2.5/weather?q=`+ inputValue.value +`&units=Metric&appid=7024602db09f273225688969f7be1f84`)
+	.then(response => response.json())
 	.then(data => {
 		console.log(data);
 		const name = data.name;
