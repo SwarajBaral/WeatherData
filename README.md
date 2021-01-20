@@ -3,4 +3,4 @@ A responsive weather checker website that uses the famous openweathermap API. Mo
 
 ### Preview
 
-- View the site at [Link](https://swarajbaral.github.io/WeatherData/Weather/)
+- View the final product [Here](https://swarajbaral.github.io/WeatherData/Weather/)
